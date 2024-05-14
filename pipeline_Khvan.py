@@ -1,8 +1,8 @@
-import luigi
+import luigi 
 import os
 import pandas as pd
 import tarfile
-import wget
+import wget 
 from bs4 import BeautifulSoup
 import requests
 import io
@@ -12,16 +12,16 @@ class DownloadDataset(luigi.Task):
     dataset_name = luigi.Parameter()
 
     def run(self):
-        # Create a directory for the dataset if it doesn't exist
+        # Создаем директорию, если она еще не существует
         dataset_dir = os.path.join('data', self.dataset_name)
         os.makedirs(dataset_dir, exist_ok=True)
 
-        # Fetch the webpage
+        # Получаем страницу
         geo_url = f"https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc={self.dataset_name}"
         response = requests.get(geo_url)
-        response.raise_for_status()  # Raise an error if the request failed
+        response.raise_for_status()  # Отслеживаем ошибку
 
-        # Parse the webpage to find the download link
+        # Парсим страницу для поиска ссылки для скачивания
         soup = BeautifulSoup(response.text, 'html.parser')
         supplementary_section = soup.find(text="Supplementary file")
         if supplementary_section:
@@ -29,7 +29,7 @@ class DownloadDataset(luigi.Task):
             if sup_link and 'download' in sup_link['href']:
                 download_url = f"https://www.ncbi.nlm.nih.gov{sup_link['href']}"
 
-                # Download the file
+                # Скачиваем файлы
                 wget.download(download_url, os.path.join(dataset_dir, f"{self.dataset_name}_RAW.tar"))
 
     def output(self):
@@ -70,10 +70,6 @@ class ExtractTarGz(luigi.Task):
     def output(self):
         return luigi.LocalTarget(f"{self.dataset_name}/file_list.txt")
 
-import luigi
-import os
-import pandas as pd
-import io
 
 class ProcessFiles(luigi.Task):
     dataset_name = luigi.Parameter()

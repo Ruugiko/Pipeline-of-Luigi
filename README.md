@@ -13,9 +13,3 @@ pip install -r requirements.txt
 ```bash
 python -m pipeline_Khvan Pipeline --local-scheduler
 ```
-
-# Описание классов
-
-- **DownloadDataset**
-
-Класс для скачивания 
