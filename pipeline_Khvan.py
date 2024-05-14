@@ -115,7 +115,7 @@ class ProcessFiles(luigi.Task):
                     v.to_csv(table_file_name, sep='\t', index=False)
                 os.remove(file_path)
                 
-                # Process Probes table
+                # обработка Probes
                 probes_file_path = os.path.join(folder_path, 'Probes.tsv')
             if os.path.exists(probes_file_path):
                 probes_df = pd.read_csv(probes_file_path, sep='\t')
