@@ -1,0 +1,51 @@
+asttokens @ file:///opt/conda/conda-bld/asttokens_1646925590279/work
+beautifulsoup4==4.12.3
+Bottleneck @ file:///croot/bottleneck_1707864210935/work
+bs4==0.0.2
+certifi==2024.2.2
+charset-normalizer==3.3.2
+comm @ file:///croot/comm_1709322850197/work
+debugpy @ file:///croot/debugpy_1690905042057/work
+decorator @ file:///opt/conda/conda-bld/decorator_1643638310831/work
+docutils @ file:///work/ci_py311/docutils_1676822773036/work
+executing @ file:///opt/conda/conda-bld/executing_1646925071911/work
+idna==3.7
+ipykernel @ file:///croot/ipykernel_1705933831282/work
+ipython @ file:///croot/ipython_1704833016303/work
+jedi @ file:///work/ci_py311_2/jedi_1679336495545/work
+jupyter_client @ file:///croot/jupyter_client_1699455897726/work
+jupyter_core @ file:///croot/jupyter_core_1698937308754/work
+lockfile==0.12.2
+luigi @ file:///work/ci_py311/luigi_1677014403054/work
+matplotlib-inline @ file:///work/ci_py311/matplotlib-inline_1676823841154/work
+mkl-fft @ file:///croot/mkl_fft_1695058164594/work
+mkl-random @ file:///croot/mkl_random_1695059800811/work
+mkl-service==2.4.0
+nest-asyncio @ file:///croot/nest-asyncio_1708532673751/work
+numexpr @ file:///croot/numexpr_1696515281613/work
+numpy @ file:///croot/numpy_and_numpy_base_1708638617955/work/dist/numpy-1.26.4-cp311-cp311-linux_x86_64.whl#sha256=5f96f274d410a1682519282ae769c877d32fdbf171aa8badec7bf5e1d3a1748a
+packaging @ file:///croot/packaging_1710807400464/work
+pandas @ file:///croot/pandas_1709590491089/work/dist/pandas-2.2.1-cp311-cp311-linux_x86_64.whl#sha256=0a2793a31a0135a35735e1431d453a06186a3a7c607d9b441d9bd5f0fe4ded31
+parso @ file:///opt/conda/conda-bld/parso_1641458642106/work
+pexpect @ file:///tmp/build/80754af9/pexpect_1605563209008/work
+platformdirs @ file:///croot/platformdirs_1692205439124/work
+prompt-toolkit @ file:///croot/prompt-toolkit_1704404351921/work
+psutil @ file:///work/ci_py311_2/psutil_1679337388738/work
+ptyprocess @ file:///tmp/build/80754af9/ptyprocess_1609355006118/work/dist/ptyprocess-0.7.0-py2.py3-none-any.whl
+pure-eval @ file:///opt/conda/conda-bld/pure_eval_1646925070566/work
+Pygments @ file:///croot/pygments_1684279966437/work
+python-daemon @ file:///work/ci_py311/python-daemon_1676904143170/work
+python-dateutil @ file:///tmp/build/80754af9/python-dateutil_1626374649649/work
+pytz @ file:///croot/pytz_1713974312559/work
+pyzmq @ file:///croot/pyzmq_1705605076900/work
+requests==2.31.0
+six @ file:///tmp/build/80754af9/six_1644875935023/work
+soupsieve==2.5
+stack-data @ file:///opt/conda/conda-bld/stack_data_1646927590127/work
+tenacity @ file:///croot/tenacity_1682972284834/work
+tornado @ file:///croot/tornado_1696936946304/work
+traitlets @ file:///work/ci_py311/traitlets_1676823305040/work
+tzdata @ file:///croot/python-tzdata_1690578112552/work
+urllib3==2.2.1
+wcwidth @ file:///Users/ktietz/demo/mc3/conda-bld/wcwidth_1629357192024/work
+wget==3.2
